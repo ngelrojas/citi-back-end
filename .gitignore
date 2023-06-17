@@ -1,0 +1,8 @@
+/app/api/__pycache__/*.*
+/app/api/__pycache__/*.pyc
+/app/*/__pycache__/*.*
+.cot-env
+.cot-envdb
+backend
+.idea
+.vscode

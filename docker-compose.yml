@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  api:
+    build: ./app
+    command: python3 manage.py runserver 0.0.0.0:9003
+    volumes:
+      - ./app/:/usr/src/app/
+    container_name: 'api_citi_backend'
+    ports:
+      - 9003:9003
+    env_file:
+      - ./.cot-env
+    depends_on:
+      - db
+
+  db:
+    image: postgres:13.0-alpine
+    container_name: 'db_citi_backend'
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    env_file:
+      - ./.cot-envdb
+
+volumes:
+  postgres_data:

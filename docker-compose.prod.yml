@@ -1,0 +1,39 @@
+version: '3.8'
+
+services:
+  api:
+    build: 
+      context: ./app
+      dockerfile: Dockerfile.prod
+    command: gunicorn api.wsgi:application --bind 0.0.0.0:9001  
+    volumes:
+      - static_volume:/home/app/api/staticfiles
+    container_name: 'api_citi_backend'
+    expose:
+      - 9001
+    env_file:
+      - ./.cot-env
+    depends_on:
+      - db
+
+  db:
+    image: postgres:13.0-alpine
+    container_name: 'db_citi_backend'
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    env_file:
+      - ./.cot-envdb
+
+  nginx:
+    build: ./nginx
+    container_name: 'nginx_citi_backend'
+    volumes:
+      - static_volume:/home/app/api/staticfiles
+    ports:
+      - 9003:9001
+    depends_on:
+      - api
+
+volumes:
+  postgres_data:
+  static_volume:
