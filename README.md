@@ -23,6 +23,11 @@
 ```
  - docker-compose exec db psql --username=myuser --dbname=mydatabase 
 ```
+### create user in db
+- reference = https://phoenixnap.com/kb/postgres-create-user
+```
+ - CREATE USER myuser WITH PASSWORD 'password';
+```
 
 ### list volumes docker 
 ### display a list of volumes
