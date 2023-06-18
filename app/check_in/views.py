@@ -1,7 +1,4 @@
-from rest_framework.views import APIView
-from rest_framework.response import Response
 from rest_framework import viewsets
-from storages.backends.s3boto3 import S3Boto3Storage
 import boto3
 import json
 import os
@@ -9,7 +6,7 @@ import asyncio
 from botocore.exceptions import ClientError
 from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticatedOrReadOnly
-from .return_file import ReturnFile
+
 
 class JSONFileView(viewsets.ViewSet):
     permission_classes = [IsAuthenticatedOrReadOnly]
@@ -18,7 +15,7 @@ class JSONFileView(viewsets.ViewSet):
 
     def get(self, request):
         source_bucket_name = os.environ.get("AWS_STORAGE_BUCKET_NAME")
-        destination_bucket_name = "citi-qr-response"  # Replace with your destination bucket name
+        destination_bucket_name = "citi-qr-response"
 
         loop = asyncio.new_event_loop()
         file_list = loop.run_until_complete(self.process_files(source_bucket_name, destination_bucket_name))
