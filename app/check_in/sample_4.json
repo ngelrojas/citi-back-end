@@ -1,0 +1,94 @@
+{
+    "HEADER": {
+        "TIPO_DE_REGISTRO": "0",
+        "OPERACAO": "1",
+        "LITERAL_DE_REMESSA": "REMESSA",
+        "CODIGO_DO_SERVICO": "02",
+        "LITERAL_DE_SERVICO": "PIX",
+        "ISPB_PARTICIPANTE": "9436939",
+        "TIPO_PESSOA_RECEBEDOR": "02",
+        "CPF_CNPJ": "81693836000137",
+        "AGENCIA": "8354",
+        "CONTA": "5405",
+        "TIPO_CONTA": "CACC",
+        "CHAVE_PIX": "81693836000137",
+        "DATA_DE_GERACAO": "20230803",
+        "NUMERO_SEQUENCIAL_DA_REMESSA": "0",
+        "VERSAO_DO_ARQUIVO": "002",
+        "NUMERO_SEQUENCIAL_DO_REGISTRO": "01"
+    },
+    "DETALHE": [
+        {
+            "TIPO_DE_REGISTRO": "1",
+            "IDENTIFICADOR": "A2j0kL9s8D7f6G5h4J3k2L1m",
+            "TIPO_DE_PESSOA_RECEBEDOR": "02",
+            "CPF_CNPJ": "81693836000137",
+            "AGENCIA": "8354",
+            "CONTA": "5405",
+            "TIPO": "CACC",
+            "CHAVE_PIX": "81693836000137",
+            "TIPO_COBRANCA": "1",
+            "COD_DE_OCORRENCIA": "01",
+            "TIMESTAP_EXPIRACAO": null,
+            "DATA_DE_VENCIMENTO": "20230619",
+            "VALIDADE_APOS_VECENCIMENTO": "4",
+            "VALOR_ORIGINAL": 110,
+            "TIPO_DE_PESSOA_DEVEDOR": "01",
+            "CPF_CNPJ_DEVEDOR": "12345678910",
+            "NOME_DEVEDOR": "Alexandre Machado",
+            "SOLICITACAO_PAGADOR": "",
+            "NUMERO_SEQUENCIAL": "02"
+        },
+        {
+            "TIPO_DE_REGISTRO": "1",
+            "IDENTIFICADOR": "0123456789ABCDEF0123456789ABCDEF0123",
+            "TIPO_DE_PESSOA_RECEBEDOR": "02",
+            "CPF_CNPJ": "81693836000137",
+            "AGENCIA": "8354",
+            "CONTA": "5405",
+            "TIPO": "CACC",
+            "CHAVE_PIX": "81693836000137",
+            "TIPO_COBRANCA": "2",
+            "COD_DE_OCORRENCIA": "01",
+            "TIMESTAP_EXPIRACAO": null,
+            "DATA_DE_VENCIMENTO": null,
+            "VALIDADE_APOS_VECENCIMENTO": null,
+            "VALOR_ORIGINAL": 130,
+            "TIPO_DE_PESSOA_DEVEDOR": "01",
+            "CPF_CNPJ_DEVEDOR": "98765432101",
+            "NOME_DEVEDOR": "Rafael Alves",
+            "SOLICITACAO_PAGADOR": "",
+            "NUMERO_SEQUENCIAL": "03"
+        }
+    ],
+    "REGISTRO_DETALHE_INFORMCOES_ADICIONAIS": [
+        {
+            "TIPO_DE_REGISTRO": "2", 
+            "IDENTIFICADOR": "0123456789ABCDEF0123456789ABCDEF0123",
+            "LISTA":[{
+                "NOME":"Rafael Alves",
+                "VALOR":130
+            }],
+            "NUMERO_SEQUENCIAL":"04"
+        }
+    ],
+
+    "DADOS_ESPECIFICOS_DE_COBRANCA_COM_VENCIMENTO": {
+        "TIPO_DE_REGISTRO": "3",
+        "IDENTIFICADOR": "A2j0kL9s8D7f6G5h4J3k2L1m",
+        "EMAIL_DO_DEVEDOR":"alexandre@email.com",
+        "LOGRADOURO_DO_DEVEDOR":"rua vivo aqui",
+        "CIDADE_DO_DEVEDOR":"Belo Horizonte",
+        "ESTADO_DO_DEVEDOR":"MG",
+        "CEP_DO_DEVEDOR":"30380000",
+        "MODALIDADE_JUROS":1,
+        "VALOR MULTA":0.25,
+        "NUMERO_SEQUENCIAL_DO_REGISTRO": "05"
+    },
+    "TRAILER": {
+        "TIPO_DE_REGISTRO": "9",
+        "VALOR": 240,
+        "QTDE_DE_REGISTROS": "06",
+        "NUMERO_SEQUENCIAL": "06"
+    }
+}
