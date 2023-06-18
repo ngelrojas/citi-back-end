@@ -1,3 +1,5 @@
+[![Deploy to EC2 CITI BACKEND CHECK IN](https://github.com/ngelrojas/citi-back-end/actions/workflows/manual.yml/badge.svg)](https://github.com/ngelrojas/citi-back-end/actions/workflows/manual.yml)
+
 ### installation
 - copy file called cot-env from fenv folder, paste and renamed to .cot-env to
   root folder
