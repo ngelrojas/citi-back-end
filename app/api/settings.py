@@ -42,6 +42,7 @@ LOCAL_APPS = [
 THRID_APPS = [
     "rest_framework",
     "corsheaders",
+    "storages",
 ]
 
 API_APPS = []

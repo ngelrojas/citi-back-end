@@ -1,0 +1,127 @@
+{
+    "HEADER": {
+        "TIPO_DE_REGISTRO": "0",
+        "CODIGO_DE_RETORNO": "9999",
+        "LITERAL_DE_RETORNO": "UUU",
+        "CODIGO_DO_SERVICO": "1",
+        "LITERAL_DE_SERVICO": "UUU",
+        "ISPB_PARTICIPANTE": "12345678",
+        "TIPO_DE_PESSOA_RECEBEDOR": "02",
+        "CPF_CNPJ": "81693836000137",
+        "AGENCIA": "8354",
+        "CONTA": "5405",
+        "TIPO_CONTA": "CACC",
+        "CHAVE_PIX": "81693836000137",
+        "DATA_DE_GERACAO": "20230803",
+        "CODIGO_DO_CONVENIO": "1234567890123456789012345678901234567890123456789012345678901234",
+        "EXCLULSIVO_PSP_RECEBEDOR": "1234567890123456789012345678901234567890123456789012345678901234",
+        "NOME_DO_RECEBEDOR": "Alexandre Machado",
+        "CODIGOS_DE_ERROR": "7",
+        "BRANCOS": "1234567890123456789012345678901234567890123456789012345678901234",
+        "NUMERO_SEQUENCIAL_DO_RETORNO": "111",
+        "VERSAO_DO_ARQUIVO": "1",
+        "NUMERO_SEQUENCIASL_DO_REGISTRO": "01"
+    },
+    "DETALHE": [
+        {
+            "TIPO_DE_REGISTRO": "1",
+            "IDENTIFICADOR": "0123456789ABCDEF0123456789ABCDEF0123",
+            "TIPO_DE_PESSOA_RECEBEDOR": "02",
+            "CPF_CNPJ": "81693836000137",
+            "AGENCIA": "8354",
+            "CONTA": "5405",
+            "TIPO": "CACC",
+            "CHAVE_PIX": "81693836000137",
+            "TIPO_COBRANCA": "2",
+            "COD_DO_MOVIMENTO": "01",
+            "TIMESTAMP_EXPIRACAO": "12121212",
+            "DATA_DE_VENCIMENTO": "12121212",
+            "VALIDADE_APOS_VENCIMENTO": "12121212",
+            "VALOR_ORIGINAL": "130",
+            "TIPO_DE_PESSOA_DEVEDOR": "01",
+            "CPFCNPJ_DEVEDOR": "98765432101",
+            "NOME_DEVEDOR": "Rafael Alves",
+            "SOLICITACAO_AO_PAGADOR_OU_CAMPO_TEXTO_LIVRE": "Rafael Alves",
+            "EXCLUSIVO_PSP_RECEBEDOR": "Rafael Alves",
+            "DATA_DE_MOVIMENTO": "12121212",
+            "CODIGOS_DE_ERROR": "7",
+            "REVISAO": "7",
+            "TARIFA_DE_COBRANCA": "7",
+            "BRANCOS": "7",
+            "NUMERO_SEQUENCIAL": "01",
+            "REGISTRO_DETALHE_INFORMACOES_ADICIONAIS": [
+                {
+                    "TIPO_DE_REGISTRO": "2",
+                    "IDENTIFICADOR": "0123456789ABCDEF0123456789ABCDEF0123",
+                    "LISTA": [
+                        {
+                            "NOME": "Rafael Alves",
+                            "VALOR": "130"
+                        }
+                    ],
+                    "NUMERO_SEQUENCIAL": "02"
+                }
+            ]
+        }
+    ],
+    "EMV": {
+            "TIPO_DE_REGISTRO": "0",
+            "OPERACAO": "1",
+            "CHAVE_PIX": "81693836000137",
+            "COD_DE_MOVIMENTO": "01",
+            "DATA_DE_MOVIMENTO": "20230803",
+            "EMV_DO_QR_CODE": "00020101021226870014br.gov.bcb.pix0116816938360001370204Alex520400005303986540510.005802BR5913Alexandre Machado6008Belo Horizonte62070503***6304B1E3",
+            "LOCALTION": "geo:0,0?q=-19.9245,-43.9352",
+            "BRANCOS": "DDD",
+            "NUMERO_SEQUENCIAL": "06",
+            "REGISTRO_DE_RECEBIMENTO": [
+                {
+                    "TIPO_DE_REGISTRO": "0",
+                    "IDENTIFICADOR": "A2j0kL9s8D7f6G5h4J3k2L1m",
+                    "ISPB_PARTICIPANTE": "12345678",
+                    "TIPO_DE_PESSOA": "02",
+                    "CPF_CNPJ": "81693836000137",
+                    "AGENCIA": "8354",
+                    "CONTA": "5405",
+                    "TIPO_CONTA": "CACC",
+                    "CHAVE_PIX": "81693836000137",
+                    "TIPO_COBRANCA": "1",
+                    "COD_DO_MOVIMENTO": "01",
+                    "DATA_DO_MOVIMENTO": "20230803",
+                    "DATA_DE_VENCIMENTO": "20230619",
+                    "TIMESTAMP_DO_PAGAMENTO": "20230803",
+                    "VALOR_ORIGINAL": 110,
+                    "VALOR_JUROS": 110,
+                    "VALOR_MULTA": 110,
+                    "VALOR_DESCONTO": 110,
+                    "VALOR_FINAL": 110,
+                    "VALOR_PAGO": 110,
+                    "TIPO_DE_PESSOA": "CPF",
+                    "CPFCNPJ_DEVEDOR": "12345678910",
+                    "TIPO_DE_PESSOA_PAGADOR_FINAL": "CPF",
+                    "CPFCNPJ_PAGADOR_FINAL": "12345678910",
+                    "NOME_PAGADOR_FINAL": "Alexandre Machado",
+                    "MENSAGEM_PAGADOR_FINAL": "Pagamento realizado com sucesso",
+                    "COD_DE_LIQUIDACAO": "01",
+                    "END_TO_END_ID": "A2j0kL9s8D7f6G5h4J3k2L1m",
+                    "REVISAO": "1",
+                    "EXCLUSIVO_PSP_RECEBEDOR": "1",
+                    "TAFIRA_DE_COBRANCA": "1",
+                    "NUMERO_SEQUENCIAL": "06"
+                }
+            ]
+        },
+    "TRAILER": {
+        "TIPO_DE_REGISTRO": "9",
+        "CODIGO_DE_RETORNO": "00",
+        "CODIGO_DE_SERVICO": "01",
+        "ISPB": "12345678",
+        "CODIGOS_DE_ERRO": "00000",
+        "VALOR_TOTAL": 240,
+        "QTDE_DE_DETALHES": "06",
+        "NUMERO_SEQUENCIAL": "06"
+    },
+    "CODIGOS_DE_ERROR": [
+        "3", "7", "8", "9", "10", "11", "12", "13", "14", "15"
+    ]
+}
