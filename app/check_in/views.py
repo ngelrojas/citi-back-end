@@ -3,6 +3,7 @@ import boto3
 import json
 import os
 import asyncio
+import logging
 from botocore.exceptions import ClientError
 from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticatedOrReadOnly
@@ -14,6 +15,7 @@ class JSONFileView(viewsets.ViewSet):
     queryset = None
 
     def get(self, request):
+        logging.info("into the get method")
         source_bucket_name = os.environ.get("AWS_STORAGE_BUCKET_NAME")
         destination_bucket_name = "citi-qr-response"
 
@@ -24,12 +26,14 @@ class JSONFileView(viewsets.ViewSet):
         return Response(file_list)
 
     async def process_files(self, source_bucket_name, destination_bucket_name):
+        logging.info("into the process_files method")
         s3 = boto3.resource('s3')
         source_bucket = s3.Bucket(source_bucket_name)
         destination_bucket = s3.Bucket(destination_bucket_name)
         file_list = []
 
         async def files(obj):
+            logging.info("into the files method async function")
             if obj.key.endswith('.json'):
                 file_data = obj.get()['Body'].read()
                 file_data = file_data.decode('utf-8')
