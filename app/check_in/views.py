@@ -8,6 +8,8 @@ from botocore.exceptions import ClientError
 from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticatedOrReadOnly
 
+logger = logging.getLogger(__name__)
+
 
 class JSONFileView(viewsets.ViewSet):
     permission_classes = [IsAuthenticatedOrReadOnly]
